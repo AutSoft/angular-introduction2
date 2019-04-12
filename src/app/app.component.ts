@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Fruit } from './fruit';
+import { TitleService } from './title.service';
 
 @Component({
   selector: 'app-root',
@@ -17,6 +18,10 @@ export class AppComponent {
     {name: 'orange', color: 'orange', score: 9},
     {name: 'plum', color: 'purple', score: 5}
   ];
+
+  constructor(private titleService: TitleService) {
+    this.title = titleService.getTitle();
+  }
 
   getClassForFruit(fruit: any) {
     return {like: fruit.score > 7, dislike: fruit.score < 5};
