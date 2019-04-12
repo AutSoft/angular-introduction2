@@ -1,0 +1,11 @@
+.like {
+  font-size: x-large;
+}
+
+.dislike {
+  text-decoration: line-through;
+}
+
+.dark-bg {
+  background-color: black;
+}

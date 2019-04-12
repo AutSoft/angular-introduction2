@@ -17,4 +17,8 @@ export class AppComponent {
     {name: 'orange', color: 'orange', score: 9},
     {name: 'plum', color: 'purple', score: 5}
   ];
+
+  getClassForFruit(fruit: any) {
+    return {like: fruit.score > 7, dislike: fruit.score < 5};
+  }
 }
