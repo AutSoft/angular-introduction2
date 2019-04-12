@@ -3,7 +3,7 @@
     I like {{fruit.name}} - {{fruit.score}}
   </div>
   <ng-template #elseContent>
-    I don't like {{fruit.name}} - {{fruit.score}}
+    I don't like {{fruit | heart:true}} - {{fruit.score}}
   </ng-template>
 </div>
 <div>

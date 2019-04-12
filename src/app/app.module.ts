@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HoverDirective } from './hover.directive';
+import { HeartPipe } from './heart.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HoverDirective
+    HoverDirective,
+    HeartPipe
   ],
   imports: [
     BrowserModule
