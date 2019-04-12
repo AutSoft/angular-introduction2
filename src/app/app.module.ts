@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HoverDirective } from './hover.directive';
 import { HeartPipe } from './heart.pipe';
+import { InputComponent } from './input/input.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HoverDirective,
-    HeartPipe
+    HeartPipe,
+    InputComponent
   ],
   imports: [
     BrowserModule
