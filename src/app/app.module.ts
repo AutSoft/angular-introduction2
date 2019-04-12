@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HoverDirective } from './hover.directive';
 import { HeartPipe } from './heart.pipe';
 import { InputComponent } from './input/input.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { InputComponent } from './input/input.component';
     InputComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

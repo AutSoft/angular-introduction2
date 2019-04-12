@@ -8,6 +8,8 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class InputComponent implements OnInit {
   @Input() text: string;
   @Output() textChange = new EventEmitter<string>();
+  internalText = 'Angular';
+  selected = 'C';
 
   constructor() { }
 
