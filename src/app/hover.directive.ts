@@ -1,10 +1,10 @@
-import { Directive, ElementRef, HostListener } from '@angular/core';
+import { Directive, ElementRef, HostListener, Input } from '@angular/core';
 
 @Directive({
   selector: '[appHover]'
 })
 export class HoverDirective {
-  color = 'blue';
+  @Input('appHover') color = 'blue';
 
   constructor(private element: ElementRef<HTMLElement>) { }
 

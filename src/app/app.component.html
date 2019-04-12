@@ -1,4 +1,4 @@
-<div appHover *ngFor="let fruit of fruits" [ngClass]="getClassForFruit(fruit)" [class.dark-bg]="fruit.color === 'yellow'" [ngStyle]="{color: fruit.color}">
+<div appHover="red" *ngFor="let fruit of fruits" [ngClass]="getClassForFruit(fruit)" [class.dark-bg]="fruit.color === 'yellow'" [ngStyle]="{color: fruit.color}">
   <div *ngIf="fruit.score >= 6; else elseContent">
     I like {{fruit.name}} - {{fruit.score}}
   </div>
