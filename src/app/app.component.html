@@ -6,3 +6,17 @@
     I don't like {{fruit.name}} - {{fruit.score}}
   </ng-template>
 </div>
+<div>
+  Uppercase pipe example:
+</div>
+{{'uppercase' | uppercase}}
+
+<div>
+  JSON pipe example:
+</div>
+{{fruits | json}}
+
+<div>
+  Number pipe example:
+</div>
+{{7.4445554 | number:'2.2-2'}}
